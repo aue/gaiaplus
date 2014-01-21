@@ -1,0 +1,33 @@
+* {margin: 0; padding: 0; -webkit-box-sizing: border-box;}
+html {background: #FFF;}
+body {background: -webkit-radial-gradient(top right, 100% 90%, #FA8C7B, rgba(255,240,68,0)); width: 250px; font: normal 14px/1.5 "Segoe UI", "Myriad Pro", Myriad, Tahoma, Arial, sans-serif; padding: 15px; color: #333; border-radius: 3px;}
+
+p {margin: 5px 0;}
+p + h3 {margin-top: 10px;}
+strong {display: block;}
+
+h1 {}
+
+header {color: rgba(0,0,0,0.8);}
+header h1 {font-size: 20px; font-weight: bold; display: block;}
+
+ul {margin-bottom: -5px; display: block; clear: both;}
+ul li {position: relative; display: block; border-bottom: 1px solid rgba(0,0,0,0.08);}
+ul li:last-of-type {border-bottom: 0;}
+
+	ul li > a {cursor: pointer; display: block; padding: 7px 0; color: #777;}
+	ul li:hover > a {color: #222;}
+	ul li:active > a {color: #AAA;}
+	ul li > a:before {height: 15px; width: 15px; border-radius: 20px; content: ''; position: absolute; top: 50%; margin-top: -8px; right: 0; background: #575748; z-index: 1;}
+	ul li > a:after {border-top: 4px solid transparent; border-bottom: 4px solid transparent; border-left: 6px solid #FA8C7B; border-right: 6px solid transparent; height: 0; width: 0; content: ''; position: absolute; top: 50%; margin-top: -5px; right: -2px; z-index: 2;}
+	ul li:active > a:before {background: #AAA;}
+	ul li:active > a:after {border-left: 6px solid #FFF;}
+	
+[size=11][b][color=darkslategray]Exploring the[/color] [color=goldenrod]world[/color] [color=darkslategray]will never mean[/color][/b][/size][align=center]
+
+
+To customize this post format and add others, go to your GaiaPlus Settings in Chrome.
+For help, [url=http://www.gaiaonline.com/forum/t.45053993/]visit our thread[/url].
+
+
+[/align][align=right][size=11][b][color=darkslategray]as[/color] [color=royalblue]much[/color] [color=darkslategray]as when I'm with you.[/color][/color][/b][/size][/align]

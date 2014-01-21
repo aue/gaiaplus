@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset=utf-8 />
+	<title>GaiaPlus Settings</title>
+
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="icon" href="../images/16.png">
+	<script src="../code/jquery.min.js"></script>
+	<script src="jquery-ui.min.js"></script>
+	<script src="../code/analytics.js"></script>
+	<script src="options.js"></script>
+</head>
+
+<body>
+	<div id="message"><strong>Saved!</strong></div>
+
+	<header>
+		<h1>GaiaPlus Settings</h1>
+		<menu>
+			<a href="#" class="postformatting current">Home</a>
+			<a href="#" class="about">About</a>
+		</menu>
+	</header>
+
+	<div id="pages">
+		<div class="page postformatting selected">
+			<section id="postformating" class="list">
+				<h3>Post Formats <a class="right"><button class="save">Save</button> <button class="add">Add Format</button></a></h3>
+        <p>Style your forum posts. Your first format will be the one inserted automatically. 
+        	<span>Make sure to save your formats.</span></p>
+
+				<aside class="group"></aside>
+			</section>
+
+			<section>
+				<h3>Quote</h3>
+				
+				<aside class="columns">
+					<li class="checkbox">When replying, place quotes at the end
+          	<input pref="posts.settings.quotes.endOfFormat" type="checkbox"></li>
+					<li class="checkbox">Remove formatting from quoted posts
+          	<input pref="posts.settings.quotes.removeFormatting" type="checkbox"></li>
+          <li class="range">Number of lines used to separate post and quotes
+          	<input pref="posts.settings.quotes.rangeNumber" type="range" step="1" min="0" max="10" value="2"><span class="value">2</span></li>
+        	<li class="spacer"></li>
+				</aside>
+			</section>
+
+			<section>
+				<h3>Defaults</h3>
+				<p>Choose where you want your post formats to be used.</p>
+
+				<aside class="columns">
+					<li class="checkbox">Forums
+          	<input pref="posts.settings.pages.forums" type="checkbox" checked></li>
+					<li class="checkbox">Guilds
+          	<input pref="posts.settings.pages.guildForums" type="checkbox" checked></li>
+          <li class="checkbox">Private Messages
+          	<input pref="posts.settings.pages.pms" type="checkbox" checked></li>
+          <li class="checkbox">Profile Comments
+          	<input pref="posts.settings.pages.profileComments" type="checkbox" checked></li>
+				</aside>
+			</section>
+		</div> <!-- Post formatter -->
+
+		<div class="page about">
+			<section>
+				<h3>Sync</h3>
+				
+				<aside>
+					<li>
+          	<p>Access your post formats on any computer with Google Chrome. <br>When you're signed into Google Chrome, your settings for GaiaPlus are automatically synced to the cloud with Chrome Sync.</p>
+          	<p><a href="http://support.google.com/chrome/answer/165139" target="_blank"><button>Learn More</button></a></p>
+         	</li>
+				</aside>
+			</section>
+
+			<section>
+				<h3>Reset</h3>
+				
+				<aside>
+					<li>Is GaiaPlus not functioning? Like to reset all of GaiaPlus's settings?</li>
+          <li>I acknowledge my preferences will be lost. <input class="agreeReset" type="checkbox" /></li>
+					<li><button class="reset">Reset GaiaPlus</button></li>
+				</aside>
+			</section>
+
+			<section>
+				<h3>About</h3>
+
+				<aside>
+					<li>
+						<p>GaiaPlus is made with only one goal in mind: to be the simplest, lightest and easiest post formatter for Gaia.
+            	<br>No extras, bulk or requirements.</p>
+						<p><a href="http://bowafishtech.org/" target="_blank"><button>bowafishtech</button></a> Think the future.</p>
+					</li>
+				</aside>
+			</section>
+
+			<section>
+				<h3>Credits</h3>
+				<p>GaiaPlus is made possible by:</p>
+
+				<aside>
+					<li>BetterGaia</li>
+					<li>jQuery</li>
+          <li>Chrome</li>
+          <li>Gaia Online</li>
+          <li>Our beta testers</li>
+          <li>And of course the regulars</li>
+				</aside>
+			</section>
+		</div> <!-- About -->
+	</div> <!-- end sections -->
+</body>

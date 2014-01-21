@@ -1,0 +1,16 @@
+/* CSS Copyright (c) bowafishtech */
+body textarea ~ #bg_postbuttons, body textarea ~ #bg_postbuttons * {box-sizing: border-box;}
+body textarea ~ #bg_postbuttons {background: -webkit-linear-gradient(top, #FFF9F9, #F1D7CE) #FFF9F9; border: 1px solid #BBB; border-width: 0 1px 1px; padding: 5px 0 5px 5px; height: auto; clear: both;}
+body textarea ~ #bg_postbuttons > a:not([href]) {margin: 0 5px 0 0; cursor: pointer; display: block; float: left; border: 1px solid; border-color: #BBB #AAA #999; padding: 2px 5px; background: -webkit-linear-gradient(top, #FFF 27%, #DDD) #FFF; border-radius: 4px; color: #222 !important; font-family: Arial, Helvetica, sans-serif;}
+body textarea ~ #bg_postbuttons > a:not([href]):not(.current):hover {background: -webkit-linear-gradient(top, #FFF 50%, #DDD) #FFF; border-color: #CCC #BBB #AAA;}
+body textarea ~ #bg_postbuttons > a:not([href]):not(.current):active {box-shadow: 0 0 7px rgba(0,0,0,0.3) inset;}
+
+body textarea ~ #bg_postbuttons > a.current {box-shadow: 0 0 4px #FEECC8 inset; background: -webkit-linear-gradient(top, #FCBE49, #FEECC8) #FEECC8; color: rgba(0,0,0,0.37) !important; cursor: default;}
+
+body textarea ~ #bg_postbuttons a[href] {float: right; margin: 7px 7px 0; font-size: 10px; color: #131304 !important; text-shadow: 0 1px 0 #FFF; text-transform: uppercase; position: relative;}
+body textarea ~ #bg_postbuttons a[href]:before {content: ''; background: url(../images/19.png); width: 19px; height: 19px; display: inline-block; margin: 0 5px -5px 0;}
+body textarea ~ #bg_postbuttons a[href]:hover:after {content: 'The simple, light and easy post formatter for Gaia.'; position: absolute; z-index: 1; background: #FFF; padding: 5px; border-radius: 7px; width: 140px; text-align: center; box-shadow: 0 0 2px rgba(0,0,0,0.75); top: 22px; left: -35px;}
+
+/* Size fixes */
+#compose textarea ~ #bg_postbuttons {width: 577px; float: right;}
+body.community textarea ~ #bg_postbuttons {width: 471px;}

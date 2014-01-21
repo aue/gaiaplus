@@ -1,0 +1,174 @@
+﻿/* (c) BetterGaia, bowafishtech.org. v0.4 */
+
+/* Page Reset */
+*:not(button) {margin: 0; padding: 0; outline: none; border: 0; list-style: none; box-sizing: border-box;}
+header, menu, #pages .page, aside, article, footer, address {display: block;}  
+html {background: #FFF; height: 100%;}
+body {font: normal 14px/1.5 "Segoe UI", "Segoe", "Tahoma", "Verdana", "Arial", "sans-serif"; color: #333; min-width: 960px; max-width: 1500px; margin: 0 auto;}
+
+/* #pages .page Elements */
+a {color: #004A7F; text-decoration: none; cursor: pointer;}
+	a:hover {color: #5D8DAF; text-decoration: none;}
+	a:active {color: #004A7F;}
+
+input, textarea, button, select {}
+input[type="checkbox"], input[type="radio"] {cursor: pointer;}
+iframe {display: block;}
+.left {float: left !important;}
+.right {float: right !important;}
+.clear {display: block; clear: both;}
+.last {margin-right: 0 !important;}
+
+p {margin-bottom: 10px;}
+hr {border-bottom: 1px solid rgba(0,0,0,0.1); display: block; clear: both;}
+
+.group:after {content: ""; display: table; clear: both;}
+
+/* Button */
+button, input[type="submit"] {border-radius: 2px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); -webkit-user-select: none; background: -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5); border: 1px solid #AAA; color: #444; font: normal 13px Arial, Helvetica, sans-serif; min-width: 6em; padding: 3px 12px 4px;}
+button:hover, input[type='submit']:hover {box-shadow: 0 1px 3px rgba(0,0,0,0.2); background: #ebebeb -webkit-linear-gradient(#fefefe, #f8f8f8 40%, #e9e9e9); border-color: #999; color: #222;}
+button:active, input[type='submit']:active {box-shadow: inset 0 1px 3px rgba(0,0,0,0.2); background: #ebebeb -webkit-linear-gradient(#f4f4f4, #efefef 40%, #dcdcdc); color: #333;}
+button[disabled], input[type='submit'][disabled], button[disabled]:hover, input[type='submit'][disabled]:hover {box-shadow: none; background: -webkit-linear-gradient(#fafafa, #f4f4f4 40%, #e5e5e5); border-color: #aaa; color: #888;}
+.page.about button.reset {display: none;}
+
+/* Select */
+select {-webkit-appearance: button; border-radius: 2px; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); -webkit-padding-end: 20px; -webkit-padding-start: 2px; -webkit-user-select: none; background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAICAYAAAAbQcSUAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sCDwEnBT3jKacAAABaSURBVCjPY2CgA4gC4jQ8OIpokxKBgJmZ+RuQ+R8dg8RB8kQb9v//f4UFCxYsZGNj+4lsEIgPEgfJk+RPdAPJNgjdQD4+vi8UGYRs4Nu3b5soNgjJQFZi1AEAhHNE/wdnPVcAAAAASUVORK5CYII=") center right no-repeat, -webkit-linear-gradient(#fafafa, #f4f4f4 40%, #e5e5e5); border: 1px solid #AAA; color: #555; font: normal 13px Arial, Helvetica, sans-serif; min-width: 6em; overflow: hidden; padding: 2px; text-overflow: ellipsis; white-space: nowrap;}
+select:disabled {color: graytext;}
+select:enabled:hover {box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAICAYAAAAbQcSUAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sCDwEnBT3jKacAAABaSURBVCjPY2CgA4gC4jQ8OIpokxKBgJmZ+RuQ+R8dg8RB8kQb9v//f4UFCxYsZGNj+4lsEIgPEgfJk+RPdAPJNgjdQD4+vi8UGYRs4Nu3b5soNgjJQFZi1AEAhHNE/wdnPVcAAAAASUVORK5CYII="), -webkit-linear-gradient(#fefefe, #f8f8f8 40%, #e9e9e9); color: #333;}
+select:enabled:active {box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2); background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAICAYAAAAbQcSUAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sCDwEnBT3jKacAAABaSURBVCjPY2CgA4gC4jQ8OIpokxKBgJmZ+RuQ+R8dg8RB8kQb9v//f4UFCxYsZGNj+4lsEIgPEgfJk+RPdAPJNgjdQD4+vi8UGYRs4Nu3b5soNgjJQFZi1AEAhHNE/wdnPVcAAAAASUVORK5CYII="), -webkit-linear-gradient(#f4f4f4, #efefef 40%, #dcdcdc); color: #444;}
+
+/* Checkbox */
+input[type='checkbox'] {
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+	-webkit-transition: background-position 0.08s ease;
+  background: -webkit-linear-gradient(left, #A6A6A6, #A6A6A6) no-repeat #DB3535;
+  box-shadow: 0 0 0 2px #A6A6A6 inset, 0 0 0 3px #FFF inset;
+  color: #444;
+	font: inherit;
+  font-weight: bold;
+  margin: 10px 0;
+	-webkit-margin-start: 120px !important;
+  height: 20px;
+  position: relative;
+  width: 50px;
+}
+input[type='checkbox']:checked {background-position: 100px 0;}
+input[type='checkbox']::before {-webkit-user-select: none; content: 'Off'; position: absolute; left: -120px; display: block; height: 100%; line-height: 1.4; width: 30px;}
+input[type='checkbox']:checked::before {content: 'On';}
+input[type='checkbox']::after {-webkit-user-select: none; content: ''; position: absolute; right: 38px; display: block; height: 100%; width: 12px; background: #000; -webkit-transition: right 0.05s ease;}
+input[type='checkbox']:checked::after {right: 0;}
+
+input[type='checkbox'][disabled]::after {background: #A6A6A6;}
+
+
+/* Message */
+#message {font-weight: bold; text-align: center; position: fixed; z-index: 10; top: -100px; left: 50%; margin-left: -75px; width: 150px; background: -webkit-linear-gradient(top, #EEE, #DDD); color: #333; border-radius: 0 0 15px 15px; box-shadow: 0 0 10px 5px #FFF, 0 -1px 5px rgba(0,0,0,0.25) inset; transition: top 0.5s cubic-bezier(0.305, 0.085, 0.410, 1.185) 0s;}
+#message strong {padding: 15px 5px 7px; border-radius: 0 0 15px 15px; display: block; background-repeat: no-repeat; background-image: -webkit-linear-gradient(-45deg, rgba(255,255,255,0) 30%, rgba(255,255,255,0.8) 45%, rgba(255,255,255,0.7) 55%, rgba(255,255,255,0.0) 70%); background-position: -125px 0; -webkit-transition: background-position 0s ease 0.3s;}
+
+#message.show {top: -10px;}
+#message.show strong {background-position: 125px 0; -webkit-transition-duration: 0.5s;}
+
+
+/* Header */
+header {width: 170px; min-height: 400px; position: fixed; background: -webkit-radial-gradient(top right, 100% 90%, #FA8C7B, rgba(255,240,68,0));}
+	header h1 {margin: 33px 30px 25px; width: 113px; height: 36px; background: url(../images/logo_options.png) left top no-repeat; font-size: 0; display: block;}
+
+	menu {margin: 0 0 100px; overflow: hidden;}
+		menu a {display: block; -webkit-transition: all 0.3s ease;}
+			menu a {cursor: pointer; font-size: 14px; font-weight: normal; padding: 10px 30px 10px 200px; display: block; color: #444; float: right; width: 340px; clear: both;}
+			menu a:hover {color: #777; background: rgba(255,255,255,0.5);}
+			menu a:active {background: rgba(255,255,255,0.75);}
+			menu a.current {background: #FFF; color: #222;}
+
+/* Pages */
+#pages {background: #FFF; padding: 30px; margin-left: 170px; box-shadow: -20px 0 20px -20px rgba(0,0,0,0.2); min-width: 785px;}
+#pages .page {background: #FFF; visibility: hidden; position: relative; height: 0; opacity: 0; overflow: hidden;}
+#pages .page.selected {visibility: visible; opacity: 1; overflow: visible; height: auto;}
+
+#pages .page h1 {display: block; font-size: 25px; line-height: 25px; font-weight: normal; color: rgba(0,0,0,0.45); border-bottom: 1px solid #CCC; margin: 0; height: 62px;}
+#pages .page h1 + p {margin: -35px 0 29px;}
+
+/* Section */
+#pages .page.hide section {opacity: 0.5; pointer-events: none;}
+
+#pages .page section:first-of-type {padding-top: 0;}
+#pages .page section {position: relative; border-bottom: 1px solid rgba(0,0,0,0.1); padding: 15px 0 10px; clear: both;}
+	#pages .page section > h3, #pages .page .ask h3 {font-size: 25px; font-weight: normal; padding: 0 0 15px; color: #DB3535;}
+	#pages .page section > p:first-of-type {margin-bottom: 15px;}
+	#pages .page section > h3 + p {margin: -15px 0 15px !important;}
+
+	#pages .page section aside {display: block;}
+	#pages .page.features section aside:after, #pages .page section aside.columns:after {content: ""; display: table; clear: both;}
+	#pages .page.features section aside li, #pages .page section aside.columns li {min-height: 71px; float: left; width: 50%; padding-right: 10px;}
+	#pages .page.features section aside li input, #pages .page section aside.columns li input, #pages .page section aside.columns li select {display: block; float: none !important;}
+
+	#pages .page section aside li {display: block; overflow: hidden; padding: 0 0 10px;}
+		#pages .page section aside li:last-child:not(:hover) {border-bottom-color: transparent;}
+		
+		#pages .page section aside li input[type="radio"] {margin: 0 5px 0 0;}
+		#pages .page section aside li input[type="checkbox"] {display: block;}
+
+		#pages .page section aside li input.color {box-shadow: 0 0 0 2px #A6A6A6 inset, 0 0 0 3px #FFF inset; margin: 10px 0; padding: 5px; display: block; width: 100px; margin: 1px 7px 0 0; cursor: pointer;}
+
+		#pages .page section aside li.checkbox {}
+		#pages .page section aside li.radio {}
+		#pages .page section aside li.spacer {height: 71px;}
+	
+	#pages .page section ol {width: 180px; float: left; margin: 0 10px 0 0;}
+	#pages .page section ol h3 {position: static; padding: 0 0 10px; width: auto;}
+	#pages .page section ol li {}
+
+	/* Lists */
+	#pages .page section.list aside:empty:after {padding-bottom: 15px; display: block;}
+	#pages .page section.list aside li a.handle {display: block; float: left; height: 19px; margin: 3px 0 0 5px; width: 8px; border: 3px outset #555; border-width: 0 3px;}
+	#pages .page section.list aside li:hover a.handle {border-color: #FFF;}
+	#pages .page section.list aside li.ui-state-highlight {background: #FAD892; border-bottom: 1px solid rgba(0,0,0,0.3); box-shadow: 0 1px 0 rgba(0,0,0,0.8) inset;}
+
+	#pages .page section.list aside li .options a {display: block; padding: 2px; display: inline-block; padding: 2px 5px;}
+
+	/* Ask Popup */
+	#pages .page .ask {position: absolute; display: none; background: #FFF; width: 300px; top: 0; left: 0; z-index: 1; padding: 10px 15px 15px; border: 2px solid #000; margin: 10px 0 0 10px;}
+	#pages .page .ask input[type='text'], #pages .page .ask textarea {border: 1px solid #A6A6A6; padding: 5px 10px; width: 100%; margin: 0 0 10px;}
+	#pages .page .ask input[type='text']:focus {border-color: #DB3535;}
+	#pages .page .ask h3 .close {float: right; cursor: pointer; color: #000;}
+
+	/* Post Formating */
+	#pages .page section#postformating {}
+	#pages .page section#postformating > h3 + p span, #pages .page section#postformating.needtosave > h3 + p {font-size: 0;}
+	#pages .page section#postformating.needtosave > h3 + p span {font-size: 14px; font-weight: bold;}
+	#pages .page section#postformating.needtosave {}
+	#pages .page section#postformating .save {border-color: #F00; display: none;}
+	#pages .page section#postformating.needtosave .save {display: inline-block;}
+
+	#pages .page section#postformating aside {position: relative;}
+	#pages .page section#postformating aside:empty:after {content: "There aren't any formats here! To get started, add a post format.";}
+
+	#pages .page section#postformating aside li {cursor: move; display: block; padding: 15px; position: relative; float: left; width: 23%; height: 75px; margin: 0 10px 10px 0; box-shadow: 0 0 0 1px #DDD inset; background: #FFF; overflow: visible;}
+	#pages .page section#postformating aside li:first-of-type {box-shadow: 0 0 0 4px #DB3535 inset !important; position: relative;}
+	#pages .page section#postformating aside li:first-of-type:after {content: '\2714'; background: #DB3535; height: 20px; width: 20px; color: #FFF; display: block;  text-align: center; top: 2px; right: 2px; position: absolute; font-size: 14px; line-height: 1.4;}
+	#pages .page section#postformating aside li:before {content: attr(formatname); display: block; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+	#pages .page section#postformating aside li:first-of-type:before {font-weight: bold;}
+	#pages .page section#postformating aside li.editing {background: #EEE;}
+	
+	#pages .page section#postformating aside li .tools .delete {position: relative;}
+
+	#pages .page section#postformating div.ask input, #pages .page section#postformating div.ask textarea {}
+	#pages .page section#postformating div.ask select {width: 100%;}
+	
+		/* Ask popup */
+		#pages .page section#postformating div.ask {top: 55px; cursor: default; min-width: 600px; width: auto; left: 50%; margin-left: -150px;}
+		#pages .page section#postformating li:nth-child(4n+4) div.ask {right: 50%; margin-right: -150px; left: auto; margin-left: 0;}
+		#pages .page section#postformating div.ask textarea {min-height: 150px; padding: 5px;}
+		#pages .page section#postformating div.ask .form {margin: 0 260px 0 0;}
+		#pages .page section#postformating div.ask .right {width: 240px; padding: 5px 10px; border: 1px solid #CCC; font: 13px/1.231 'Lucida Grande', LucidaGrande, Lucida, Verdana,arial,helvetica,clean,sans-serif;}
+
+		/* List helper */
+		#pages .page section#postformating aside li.ui-sortable-placeholder {background: #FAFAFA; height: 75px; visibility: visible !important; box-shadow: none !important; border: 1px dashed #DDD;}
+		#pages .page section#postformating aside li.ui-sortable-placeholder:after {display: none !important;}
+		#pages .page section#postformating aside li.ui-sortable-helper {background: #FCEFF8; border-color: rgba(0,0,0,0.1); cursor: move; display: block;}
+		#pages .page section#postformating aside li.ui-sortable-helper input {box-shadow: none; background: transparent none; border: 0;}
+		#pages .page section#postformating aside li.ui-sortable-helper div.options, #pages .page section#postformating aside li.ui-sortable-helper form {}
+		
+		/* Range slider */
+		#pages .page.postformatting section aside li.range span.value {padding: 0 0 0 60px; font-weight: bold;}
